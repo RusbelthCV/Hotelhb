@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="ventana" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.CalendarioFXMLController">
+   <children>
+      <JFXDatePicker fx:id="fechaIn" layoutX="79.0" layoutY="165.0" promptText="Fecha inicio" />
+      <JFXDatePicker fx:id="fechaFin" layoutX="356.0" layoutY="165.0" promptText="Fecha fin" />
+      <JFXButton buttonType="RAISED" layoutX="274.0" layoutY="231.0" onAction="#reporte" text="Reportes" />
+      <JFXButton fx:id="menu" buttonType="RAISED" layoutX="284.0" layoutY="315.0" onAction="#volverMenu" text="Menú" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Servicios" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ServiciosFXMLController">
+   <children>
+      <TableView fx:id="tablaServicio" layoutY="-1.0" onMousePressed="#clickon" prefHeight="357.0" prefWidth="600.0">
+        <columns>
+          <!--<TableColumn fx:id="id" prefWidth="84.0" text="ID" />-->
+          <TableColumn fx:id="nombreS" prefWidth="259.0" text="Nombre Servicio" />
+            <TableColumn fx:id="precio" prefWidth="106.0" text="Precio" />
+            <TableColumn fx:id="idR" prefWidth="149.0" text="ID Reserva" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="menu" layoutX="274.0" layoutY="361.0" onAction="#volverMenu" text="Menú" />
+   </children>
+</AnchorPane>

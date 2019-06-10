@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="Reportes" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ListaReporteFXMLController">
+   <children>
+      <TableView fx:id="tablaReportes" prefHeight="366.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="clmTipo" prefWidth="290.0" text="Tipo" />
+          <TableColumn fx:id="clmFecha" prefWidth="309.0" text="Fecha" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="menu" layoutX="277.0" layoutY="366.0" onAction="#volverMenu" text="Menu" />
+   </children>
+</AnchorPane>

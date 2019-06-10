@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ventana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@/hotelbh2/resources/session.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.MenuFXMLController">
+   <children>
+      <JFXButton fx:id="btnListHab" buttonType="RAISED" layoutX="246.0" layoutY="268.0" onAction="#listaHab" text="Lista habitaciones" />
+      <JFXButton fx:id="mod_habitacion" buttonType="RAISED" layoutX="331.0" layoutY="175.0" onAction="#addHabitacion" text="Añadir Habitacion" />
+      <!--<JFXButton fx:id="add_reserva" buttonType="RAISED" layoutX="388.0" layoutY="350.0" onAction="#add_reserva" text="Añadir Reserva" />-->
+      <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="84.0" onAction="#servicios" text="Lista Servicios" />
+      <JFXButton buttonType="RAISED" layoutX="342.0" layoutY="84.0" onAction="#reservas" text="Lista Reservas" />
+      <JFXButton layoutX="137.0" layoutY="175.0" onAction="#recepcionista" text="Agregar Recepcionista" />
+      <JFXButton buttonType="RAISED" layoutX="247.0" layoutY="43.0" onAction="#calendario" text="Mostrar Reportes" />
+   </children>
+</AnchorPane>
