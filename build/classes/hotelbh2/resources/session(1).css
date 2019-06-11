@@ -1,0 +1,27 @@
+#window
+{
+    -fx-background-image:  url("/hotelbh2/view/images/index.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+#pane
+{
+    -fx-background-color:#ffffff;
+    -fx-opacity:0.4;
+}
+/*#inpName,#inpPass,#btnSession,#lblError
+{
+    -fx-text-fill:black;
+}*/
+#ventana
+{
+    -fx-background-color:#000066;
+}
+JFXButton
+{
+    -fx-text-fill:white;
+}
+#enviar,#enviar_hab,#enviar_modhab
+{
+    -fx-text-fill:black;
+}

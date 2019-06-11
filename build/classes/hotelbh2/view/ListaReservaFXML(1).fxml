@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="889.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ListaReservaFXMLController">
+   <children>
+      <TableView fx:id="tabla_reserva" onMousePressed="#clickon" prefHeight="400.0" prefWidth="904.0">
+        <columns>
+          <TableColumn fx:id="clmFechaIngreso" prefWidth="170.0" text="Fecha Ingreso" />
+            <TableColumn fx:id="clmFechaSalida" prefWidth="169.0" text="Fecha Salida" />
+            <TableColumn fx:id="clmCantidadP" prefWidth="127.0" text="Cantidad de Personas" />
+            <TableColumn fx:id="clmTrabajador" prefWidth="105.0" text="Registrado por.." />
+            <TableColumn fx:id="clmDocumento" prefWidth="197.0" text="Documento Cliente" />
+            <TableColumn fx:id="clmNumeroHab" prefWidth="149.0" text="Numero de Habitacion" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="hola" prefHeight="400.0" prefWidth="600.0" stylesheets="/hotelbh2/resources/session.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ClienteFXMLController">
+   <children>
+      <JFXTextField fx:id="documentos" labelFloat="true" layoutX="72.0" layoutY="62.0" promptText="Documentos" />
+      <JFXTextField fx:id="nombre" labelFloat="true" layoutX="346.0" layoutY="62.0" promptText="Nombre" />
+      <JFXTextField fx:id="estado_civil" labelFloat="true" layoutX="346.0" layoutY="117.0" promptText="Estado Civil" />
+      <JFXTextField fx:id="telefono" labelFloat="true" layoutX="72.0" layoutY="117.0" promptText="Telefono" />
+      <JFXTextField fx:id="nacionalidad" labelFloat="true" layoutX="346.0" layoutY="187.0" promptText="Nacionalidad" />
+      <JFXTextField fx:id="ocupacion" labelFloat="true" layoutX="72.0" layoutY="187.0" promptText="Ocupacion" />
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="72.0" layoutY="248.0" promptText="Email" />
+      <JFXButton fx:id="enviar" buttonType="RAISED" layoutX="364.0" layoutY="261.0" onAction="#insertC" text="Insertar Cliente" />
+   </children>
+</AnchorPane>

@@ -96,7 +96,12 @@ public class Habitacion {
         {
             conexion con = new conexion();
             String Fecha_ini=ReservaFXMLController.getFecha_enviar();
-            ResultSet rs = con.consulta("SELECT DISTINCT h.Numero_habitacion,h.caracteristicas,h.precio,h.estado,h.tipo_hab,h.piso FROM reserva r INNER JOIN habitacion h ON h.Numero_habitacion = r.fk_numero_hab WHERE fecha_ingreso >= '"+ReservaFXMLController.getFecha_enviar()+"' AND fecha_salida <= '"+ReservaFXMLController.getFecha_enviar_salida()+"'");
+            //ResultSet rs = con.consulta("SELECT DISTINCT h.Numero_habitacion,h.caracteristicas,h.precio,h.estado,h.tipo_hab,h.piso FROM reserva r INNER JOIN habitacion h ON h.Numero_habitacion = r.fk_numero_hab WHERE fecha_ingreso >= '"+ReservaFXMLController.getFecha_enviar()+"' AND fecha_salida <= '"+ReservaFXMLController.getFecha_enviar_salida()+"'");
+            //ResultSet rs = con.consulta("SELECT * FROM habitacion");
+            ResultSet rs = con.consulta("SELECT DISTINCT h.Numero_habitacion,h.caracteristicas,h.precio,h.estado,h.tipo_hab,h.piso FROM reserva r INNER JOIN habitacion h ON h.Numero_habitacion = r.fk_numero_hab where (fecha_ingreso between '"+ReservaFXMLController.getFecha_enviar()+"' and '"+ReservaFXMLController.getFecha_enviar_salida()+"') or ('"+ReservaFXMLController.getFecha_enviar()+"' between fecha_ingreso and fecha_salida)");
+//           ResultSet rs = con.consulta(" SELECT DISTINCT * FROM habitacion WHERE Numero_habitacion NOT IN(SELECT fk_numero_hab FROM reserva WHERE fecha_ingreso = '"+ReservaFXMLController.getFecha_enviar_salida()+"' AND fecha_salida = '"+ReservaFXMLController.getFecha_enviar()+"')");
+
+
             while(rs.next())
             {
                 lista.add(

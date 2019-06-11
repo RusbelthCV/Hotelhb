@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="add_service" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ServiceFXMLController">
+   <children>
+      <Label layoutX="245.0" layoutY="85.0" prefHeight="17.0" prefWidth="111.0" text="Añadir Servicio" />
+      <JFXTextField fx:id="nombre" labelFloat="true" layoutX="223.0" layoutY="132.0" promptText="Nombre del servicio" />
+      <JFXTextField fx:id="precio" labelFloat="true" layoutX="223.0" layoutY="187.0" promptText="Precio" />
+      <JFXButton fx:id="enviar_add_service" layoutX="242.0" layoutY="285.0" onAction="#insertServ" text="Añadir Servicio" />
+      <JFXComboBox fx:id="select" labelFloat="true" layoutX="272.0" layoutY="246.0" promptText="Reserva"/>
+            <Button fx:id="menu" layoutX="31.0" layoutY="25.0" mnemonicParsing="false" onAction="#volverMenu" prefHeight="31.0" prefWidth="63.0" text="Menu" />
+
+   </children>
+</AnchorPane>

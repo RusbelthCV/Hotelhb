@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ventana" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@/hotelbh2/resources/session.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.MenuFXMLController">
+   <children>
+      <JFXButton fx:id="addcliente" buttonType="RAISED" layoutX="155.0" layoutY="94.0" onAction="#addClientes" text="Añadir Clientes" />
+      <JFXButton fx:id="addhabitacion" buttonType="RAISED" layoutX="323.0" layoutY="94.0" onAction="#addHabitacion" text="Añadir Habitaciones" />
+      <JFXButton fx:id="btnLista" buttonType="RAISED" layoutX="162.0" layoutY="227.0" onAction="#lista" text="Lista clientes" />
+      <JFXButton fx:id="btnListHab" buttonType="RAISED" layoutX="329.0" layoutY="227.0" onAction="#listaHab" text="Lista habitaciones" />
+      <JFXButton fx:id="mod_service" buttonType="RAISED" layoutX="156.0" layoutY="292.0" onAction="#mod_Servicio" text="Gest. Servicios" />
+      <JFXButton fx:id="add_service" buttonType="RAISED" layoutX="335.0" layoutY="292.0" onAction="#addService" text="Añadir Servicios" />
+      <JFXButton fx:id="mod_cliente" buttonType="RAISED" layoutX="160.0" layoutY="153.0" onAction="#mod_Clientes" text="Gest. Clientes" />
+      <JFXButton fx:id="mod_habitacion" buttonType="RAISED" layoutX="328.0" layoutY="153.0" onAction="#mod_Habitaciones" text="Gest.Habitaciones" />
+    <JFXButton fx:id="add_reserva" buttonType="RAISED" layoutX="388.0" layoutY="350.0" onAction="#add_reserva" text="Añadir Reserva" />
+        <JFXButton fx:id="lista_reserva" buttonType="RAISED" layoutX="288.0" layoutY="350.0" onAction="#lista_reserva" text="Listar Reserva" />
+
+
+
+   </children>
+</AnchorPane>

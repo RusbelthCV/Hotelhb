@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="889.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.ListaFXMLController">
+   <children>
+      <TableView fx:id="tablaCliente" layoutY="-1.0" prefHeight="400.0" prefWidth="918.0" onMousePressed="#clickon" >
+        <columns>
+          <TableColumn fx:id="clmDoc" prefWidth="105.0" text="Documentos" />
+            <TableColumn fx:id="clmNombre" prefWidth="105.0" text="Nombre" />
+            <TableColumn fx:id="clmNac" prefWidth="105.0" text="Nacionalidad" />
+            <TableColumn fx:id="clmTlf" prefWidth="105.0" text="Telefono" />
+            <TableColumn fx:id="clmEmail" prefWidth="105.0" text="Email" />
+            <TableColumn fx:id="clmOcup" prefWidth="105.0" text="Ocupacion" />
+            <TableColumn fx:id="clmEC" prefWidth="105.0" text="Estado_Civil" />
+            <TableColumn fx:id="clmEmpl" prefWidth="105.0" text="Trabajador" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="habitacion" fx:id="habitacion" prefHeight="400.0" prefWidth="600.0" stylesheets="/hotelbh2/resources/session.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelbh2.controller.HabitacionFXMLController">
+   <children>
+      <JFXTextField fx:id="num_hab" labelFloat="true" layoutX="223.0" layoutY="55.0" promptText="Numero Habitacion" />
+      <JFXTextField fx:id="piso" labelFloat="true" layoutX="223.0" layoutY="101.0" promptText="Piso de la habitacion" />
+      <JFXTextField fx:id="precio" labelFloat="true" layoutX="223.0" layoutY="146.0" promptText="Precio" />
+      <JFXTextField fx:id="estado" labelFloat="true" layoutX="223.0" layoutY="187.0" promptText="Estado" />
+      <JFXTextField fx:id="tipo_hab" labelFloat="true" layoutX="223.0" layoutY="230.0" promptText="Tipo" />
+      <JFXTextArea fx:id="caracteristicas" labelFloat="true" layoutX="225.0" layoutY="269.0" prefHeight="61.0" prefWidth="155.0" promptText="Caracteristicas" />
+      <JFXButton fx:id="enviar_hab" buttonType="RAISED" layoutX="230.0" layoutY="346.0" onAction="#insertHab" text="Insertar habitacion" />
+   </children>
+</AnchorPane>
